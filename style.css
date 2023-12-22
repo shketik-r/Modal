@@ -1,0 +1,50 @@
+.menu-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #5c5c5c49;
+  z-index: -1;
+  visibility: hidden;
+  pointer-events: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-wrapper.active {
+  z-index: 100;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.menu {
+  width: 40%;
+  height: 100%;
+  padding: 20px;
+  overflow-y: auto;
+  background: #fff;
+  transform: translate(100%);
+  transition: all 0.3s;
+
+}
+
+
+.open-menu.active {
+  background: #a8a8a8;
+  position: relative;
+  z-index: 101;
+}
+
+.menu-wrapper.active .menu {
+  transform: translate(0);
+}
+
+.scrollLock {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
