@@ -4,69 +4,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Modal</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <section>
+  <header class="header">
+    <button class="open-modal" data-open-modal="modal_1">click 1</button>
+    <button class="open-modal" data-open-modal="modal_3">click 2</button>
+    <button class="open-modal" data-open-modal="modal_4">click 3</button>
 
-    <button class="open-menu">open</button>
+    <button class="burder" data-open-modal="menu">
+      <div></div>
+      <div></div>
+    </button>
 
-
-
-    <div class="menu-wrapper">
-
-      <div class="menu">
-
-        <p>Lorem, ipsum dolor sit </p>
-
-        <ul>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-          <li>Lorem ipsum dolor sit amet consectetur </li>
-        </ul>
-
-
-      </div>
-
-
-
-
+    <div class="menu-modal" data-modal="menu">
+      <ul>
+        <li>menu 1</li>
+        <li>menu 2</li>
+        <li>menu 3</li>
+        <li>menu 4</li>
+      </ul>
     </div>
-
-
-
-
-  </section>
-
+  </header>
 
 
 
@@ -74,9 +36,43 @@
 
 
 
+  <div class="modal" data-modal="modal_1">
+    <div class="modal-content" data-modal-content>
+      <button class="close-modal" data-close-modal>x</button>
+      <p>Modal 1</p>
+      <button class="open-modal-thank" data-open-modal="modal_2">submit</button>
+    </div>
+  </div>
 
 
-  <script src="main.js"></script>
+
+
+  <div class="modal" data-modal="modal_2">
+    <div class="modal-content">
+      <p>Thank you</p>
+    </div>
+  </div>
+
+
+  <div class="modal" data-modal="modal_3">
+    <div class="modal-content">
+      <button class="close-modal" data-close-modal>x</button>
+      <p>modal 2</p>
+      <button class="open-modal-thank" data-open-modal="modal_2">submit</button>
+    </div>
+  </div>
+
+  <div class="modal" data-modal="modal_4">
+    <div class="modal-content">
+      <p>modal 2</p>
+      <button class="open-modal-thank" data-open-modal="modal_2">submit</button>
+    </div>
+  </div>
+
+
+
+
+  <script src="main.js">  </script>
 
 </body>
 
